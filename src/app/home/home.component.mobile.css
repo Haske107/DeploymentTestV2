@@ -1,0 +1,9 @@
+@media screen and (max-width: 600px)   {
+    .Planet {
+        z-index:4;
+        position: absolute;
+        left: 0;
+        height: auto;
+        width: 100%;
+    }
+}

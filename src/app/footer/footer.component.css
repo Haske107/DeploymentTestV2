@@ -1,0 +1,52 @@
+ .Footer_Row {
+    background-color: rgb(61, 61, 61);
+    z-index: 1;
+
+ }
+    .Contact_Column, .Portfolio_Column, .Link_Column, .Contact_Col_Title {
+      color: white;
+      font-size: 12px;
+      font-weight: 100;
+      font-family: 'Chromatica', 'Arial', sans-serif;
+      z-index: 1;
+      -webkit-font-smoothing: antialiased;
+      background: 0 0;
+      border: 0;
+      margin: 0;
+      outline: 0;
+      padding: 0;
+      vertical-align: baseline;
+      text-align: center;
+    }
+        .Contact_Col_Title  {
+          font-weight: 500;
+          font-size: 18px;
+        }
+        .Category_Title {
+          font-size: 12px;
+          font-weight: 100;
+        }
+        .Portfolio_Title {
+          font-weight: 500;
+          font-size: 18px;
+        }
+            .Contact_Column, .Link_Column, .Portfolio_Column {
+              padding: 48px;
+            }
+                .footer-logo    {
+                    width: 80%;
+                    margin: 0 10% 12px 10%;
+                }
+                .social-icon   {
+                    height: 42px;
+                    width: 42px;
+                    padding: 6px;
+                    cursor: pointer;
+                    flex: auto;
+                }
+                .social_icon_wrapper    {
+                    margin: 12px 20% 24px 20%;
+                    width: 60%;
+                    display: inline-flex;
+                    justify-content: space-around;
+                }

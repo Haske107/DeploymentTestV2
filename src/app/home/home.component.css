@@ -1,0 +1,342 @@
+
+
+.homepage {
+   position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100% !important;
+    height: 100vh;
+    border: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+    .Home_Button  {
+      position: fixed;
+      top: 48px;
+      left: 48px;
+      width: 36px;
+      height: 36px;
+      z-index: 4;
+    }
+
+
+    .Menu_Button_Container  {
+      position: fixed;
+      top: 48px;
+      right: 48px;
+      z-index: 2;
+      width: 100px;
+      height: 30px;
+    }
+
+
+
+    .Section1_Background  {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+    }
+    .Home_Logo {
+      z-index: 3;
+      position: absolute;
+      color: white;
+      font-size: 24px;
+      font-weight: 100;
+      font-family: 'Chromatica', 'Arial', sans-serif;
+      padding: 0 48px;
+      width: 50%;
+      min-width: 250px;
+      bottom: 340px;
+      left: 25%;
+    }
+    .Subtitle {
+      padding: 0 5%;
+      color: white;
+      font-size: 20px;
+      font-weight: 300;
+      font-family: 'Chromatica', 'Arial', sans-serif;
+      z-index: 3;
+      position: absolute;
+      width: 50%;
+      bottom: 260px;
+      text-align: center;
+      left: 25%;
+    }
+
+    .Planet {
+      z-index:4;
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .Planet_Top {
+      z-index:5;
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: .5;
+    }
+
+
+    .bannervideocountainer  {
+      position: absolute;
+      left:0;
+      top: 0px;
+      height: calc(100vh);
+      padding: 0;
+      min-height: 25rem;
+      width: 100%;
+      margin: 0;
+      border: none;
+        transform: scale(1);
+        -webkit-transition: all .1s;
+        -moz-transition: all .1s;
+        -ms-transition: all .1s;
+        -o-transition: all .1s;
+        transition: all .1s;
+      z-index: 5;
+        overflow: hidden;
+    }
+        app-monolith    {
+            position:absolute;
+            top: 100px;
+            width: 100%;
+            background-color: transparent;
+        }
+        .bannervideosource  {
+            position: absolute;
+          top: 0;
+          left: 0;
+          min-width: 100%;
+          min-height: 100%;
+          width: 100%;
+          height: calc(100vh + 200px);
+          z-index: 5;
+          border: none;
+          margin: 0;
+          padding: 0;
+          -ms-transform: translateX(-50%) translateY(-50%);
+          -moz-transform: translateX(-50%) translateY(-50%);
+          -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%) ;
+        }
+            
+/* SECTION ONE  */
+    .Intro_Row {
+      z-index: 1;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      height: 150vh;
+    }
+      .Intro_Row_Column {
+        padding: 48px;
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        overflow: hidden;
+        background-color: black;
+      }
+      .Intro_Row_Background {
+    
+        min-width: 100%;
+        height: 200vh;    
+        left: 0;
+        bottom: 0;
+        transition:  0s ease-in-out;
+        position: absolute;
+        z-index: -1;
+
+      } 
+            
+
+
+
+/* GRID SECTION STYLES */   
+
+    .Grid_List  {
+      z-index: 4;
+      overflow: hidden;
+      padding-top: 1px;
+      padding-bottom: 1px;
+      background-color: white;
+    }
+     
+          .Project_Image  {
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          transition: .5s; 
+          }
+
+
+
+
+/* TEAM SECTION STYLES */
+.Team_Row {
+  padding-top: 1px;
+  height: 1000px;
+}
+  .Team_Col {
+
+  }
+    .Team_Col_Background_Wrapper  {
+      position: absolute;
+      left:0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+      .Team_Col_Background_Image  {
+        position: absolute;
+        left:0;
+        top: 0;
+        min-width: 100%;
+        min-height: 100%;
+        overflow: hidden;  
+      }
+
+ 
+/* CONTACT STYLES */
+.Contact_Row  {
+  padding-top: 1px;
+  height: 1000px;
+}
+  .Contact_Col  {
+
+  }
+    .Contact_Col_Background_Wrapper {
+      position: absolute;
+      left:0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+      .Contact_Col_Background_Image {
+        position: absolute;
+        left:0;
+        top: 0;
+        min-width: 100%;
+        height: auto;
+        overflow: hidden;
+          z-index: 3;
+      }
+      .Contact_Col_Background_Image_Foreground {
+        position: absolute;
+        left:0;
+        top: -300px;
+        min-width: 100%;
+        height: auto;
+        overflow: hidden;
+        z-index: 4;
+      }
+  .Spaceship_Wrapper    {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      height: 100px;
+      width: 100px;
+      z-index: 5
+  }
+    .Spaceship_Body_Image   {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .Spaceship_Flare_Image   {
+        position: absolute;
+        top: -24px;
+        left: -18px;
+        height: 100%;
+        width: 100%;
+    }
+    .contact_box {
+        z-index: 7;
+
+        position: absolute;
+        top: 200px;
+        left: 0;
+        height: auto;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 100;
+        font-family: 'Chromatica', 'Arial', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        background: 0 0;
+        border: 0;
+        margin: 0;
+        outline: 0;
+        padding: 0;
+        vertical-align: baseline;
+        text-align: center;
+        color: white;
+    }
+        .Category_Title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 100;
+
+        }
+        .Contact_Title  {
+            margin-bottom: 18px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+/* Footer */
+.footer {
+  max-width: 100%;
+}
+
+
+
+
+
+
+ /* -----------MAIN STYLES------------------------------*/
+#scrollbar_style::-webkit-scrollbar {
+    width: 8px;
+    opacity: 0;
+    background-color: transparent;
+
+} 
+#scrollbar_style::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.30, rgb(226, 52, 88)),
+									   color-stop(0.55, rgb(213, 164, 218)),
+									   color-stop(0.86, rgb(186, 158, 218)));
+}
+#scrollbar_style::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+    border-radius: 0px;
+    background-color: transparent;
+    opacity: 0;
+}
+
+
+
+.pink {
+  background-color: pink;
+}
+
+
+
+
