@@ -3,7 +3,7 @@
 .homepage {
    position: absolute;
     top: 0;
-    left: 0; 
+    left: 0;
     width: 100% !important;
     height: 100vh;
     border: 0;
@@ -41,7 +41,7 @@
       background-color: black;
     }
     .Home_Logo {
-      z-index: 3;
+      z-index: 5;
       position: absolute;
       color: white;
       font-size: 24px;
@@ -59,7 +59,7 @@
       font-size: 20px;
       font-weight: 300;
       font-family: 'Chromatica', 'Arial', sans-serif;
-      z-index: 3;
+      z-index: 5;
       position: absolute;
       width: 50%;
       bottom: 260px;
@@ -88,7 +88,7 @@
       position: absolute;
       left:0;
       top: 0px;
-      height: calc(100vh);
+      height: 1200px;
       padding: 0;
       min-height: 25rem;
       width: 100%;
@@ -126,14 +126,14 @@
           -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%) ;
         }
-            
+
 /* SECTION ONE  */
     .Intro_Row {
       z-index: 1;
       overflow: hidden;
       padding: 0;
       margin: 0;
-      height: 150vh;
+      height: 1200px;
     }
       .Intro_Row_Column {
         padding: 48px;
@@ -145,21 +145,21 @@
         background-color: black;
       }
       .Intro_Row_Background {
-    
+
         min-width: 100%;
-        height: 200vh;    
+        height: 200vh;
         left: 0;
         bottom: 0;
         transition:  0s ease-in-out;
         position: absolute;
         z-index: -1;
 
-      } 
-            
+      }
 
 
 
-/* GRID SECTION STYLES */   
+
+/* GRID SECTION STYLES */
 
     .Grid_List  {
       z-index: 4;
@@ -168,13 +168,13 @@
       padding-bottom: 1px;
       background-color: white;
     }
-     
+
           .Project_Image  {
           width: 100%;
           position: absolute;
           left: 0;
           top: 0;
-          transition: .5s; 
+          transition: .5s;
           }
 
 
@@ -202,10 +202,10 @@
         top: 0;
         min-width: 100%;
         min-height: 100%;
-        overflow: hidden;  
+        overflow: hidden;
       }
 
- 
+
 /* CONTACT STYLES */
 .Contact_Row  {
   padding-top: 1px;
@@ -312,7 +312,7 @@
     opacity: 0;
     background-color: transparent;
 
-} 
+}
 #scrollbar_style::-webkit-scrollbar-thumb {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);

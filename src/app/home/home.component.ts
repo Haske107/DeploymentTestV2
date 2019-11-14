@@ -106,6 +106,7 @@ export class HomeComponent implements OnInit, OnChanges, AfterViewInit {
   @ViewChild('Contact_Row', {static: true}) Contact_Row;
 
     //CONTROL VARIABLES
+  isMobile = false;
   MouseOverActiveIndex = -1;
   DistanceFromTop = 0;
   Parallaxer = '-400px';
@@ -125,7 +126,7 @@ export class HomeComponent implements OnInit, OnChanges, AfterViewInit {
     'position': 'fixed'
   };
 
-  constructor(private scrollDispatcher: ScrollDispatcher, private cdr: ChangeDetectorRef) {    
+  constructor(private scrollDispatcher: ScrollDispatcher, private cdr: ChangeDetectorRef) {
     this.scrollDispatcher.scrolled().subscribe((x: any) => {
       this.DistanceFromTop = x.elementRef.nativeElement.scrollTop;
       this.topBannerVideo(this.DistanceFromTop);
@@ -143,7 +144,11 @@ export class HomeComponent implements OnInit, OnChanges, AfterViewInit {
 
   ngOnInit() {
       if (/Mobi|Android/i.test(navigator.userAgent)) {
-          alert("Mobile!");
+        this.isMobile = true;
+      }
+
+      // INITIATE MOBILE SETTINGS
+      if(this.isMobile)  {
       }
   }
 

@@ -30,8 +30,8 @@
   </div>
 
   <div class="Grid_Row row">
-    <div class="col">
-      <mat-grid-list cols="4" rowHeight="1:1"  class="Grid_List">
+      <div class="col">
+      <mat-grid-list [cols]="isMobile ? 2 : 4" rowHeight="1:1"  class="Grid_List">
             <mat-grid-tile class="tile" *ngFor="let Project of ProjectIDs; index as i;" (mouseover)="MouseOverActiveIndex = i" (mouseout)="MouseOverActiveIndex = -1">
             <img src="{{GoogleBaseLink + Project}}" alt="" class="Project_Image">
             <img src="{{GoogleBaseLink + TitledProjectIDs[i]}}" alt="" class="Project_Image Titled" [ngStyle]="{'opacity': MouseOverActiveIndex != i ? '0' : '1'}">
@@ -54,9 +54,9 @@
       <div class="Contact_Col_Background_Wrapper">
         <img src="https://drive.google.com/uc?export=view&id=15E0VzF0_7rHA06n1JzzaZW2DxAM_w3Y8" alt="" class="Contact_Col_Background_Image">
       </div>
-      <div class="Spaceship_Wrapper" #Spaceship [ngStyle]="{'top': SpaceshipY, 'left': SpaceshipX}" >
-          <img src="https://drive.google.com/uc?export=view&id=1YYNpEWB8ShtIlxWEBqN12z0hBcE8swI-" alt="" class="Spaceship_Body_Image">
-      </div>
+<!--      <div class="Spaceship_Wrapper" #Spaceship [ngStyle]="{'top': SpaceshipY, 'left': SpaceshipX}" >-->
+<!--          <img src="https://drive.google.com/uc?export=view&id=1YYNpEWB8ShtIlxWEBqN12z0hBcE8swI-" alt="" class="Spaceship_Body_Image">-->
+<!--      </div>-->
       <div class="contact_box">
         <h4 class="Contact_Title">Contact Information</h4>
         <h5 class="Category_Title">1433 1/2 Waterloo Street</h5>
@@ -69,7 +69,7 @@
 
   <app-footer></app-footer>
 </div>
-	
+
 
 
 
