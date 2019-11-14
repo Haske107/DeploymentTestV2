@@ -13,8 +13,10 @@ export class MonolithComponent implements OnInit {
   @Input() BannerVideoScaleValue;
   @Input() BannerRotateValue;
 
+  Video = document.getElementById("iframe59218");
 
   ngOnInit() {
+
   }
 
 }
