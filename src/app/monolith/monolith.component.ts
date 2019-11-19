@@ -28,7 +28,7 @@ export class MonolithComponent implements OnInit, AfterViewInit {
     const playerContainer = document.getElementById('iframe59218');
     this.Player1 = new Player(playerContainer, this.options);
 
-    window.setTimeout(this.playIfPaused(), 3000);
+    //window.setTimeout(this.playIfPaused(), 3000);
 
   }
 
