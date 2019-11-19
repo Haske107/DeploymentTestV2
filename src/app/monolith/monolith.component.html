@@ -12,7 +12,9 @@
     <div class="side4 front">
       <div class="guides"></div>
       <iframe
-              src="https://player.vimeo.com/video/322980163?background=1&muted=1&loop=1"
+        *ngIf="!isMobile"
+
+        src="https://player.vimeo.com/video/322980163?background=1&muted=1&loop=1"
               allowfullscreen
               allow="autoplay"
               id="iframe59218"
@@ -20,6 +22,18 @@
               class="bannervideosource col"
               [ngStyle]="{'transform': 'scale(1)'}">
       </iframe>
+      <iframe
+        *ngIf="isMobile"
+        src="https://player.vimeo.com/video/322980163?background=1&muted=1&loop=1"
+        allowfullscreen
+        allow="autoplay"
+        id="iframe59218"
+        data-ready="true"
+        class="bannervideosource col"
+        [ngStyle]="{'transform': 'scale(1)'}">
+      </iframe>
+
+      <img src="../../assets/play-button.svg" class="Mobile_Play_Button" (click)="playVideo()" *ngIf="isMobile && isPaused">
     </div>
   </div>
 </div>
