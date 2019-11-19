@@ -1,9 +1,44 @@
-@media only screen and (max-width: 850px)   {
+@media only screen and (min-width: 768px) and (max-width: 1024px)  {
   .Planet {
     z-index:4;
     position: absolute;
     left: 0;
-    height: 10%;
-    width: 10% !important;
+    height: auto;
+    width: 100%;
+  }
+  .Home_Logo {
+    z-index: 5;
+    position: absolute;
+    color: white;
+    padding: 0 48px;
+    width: 96%;
+    bottom: 340px;
+    min-width: 600px;
+    left: 2%;
+  }
+  .Subtitle {
+    padding: 0 0;
+    color: white;
+    font-size: 36px;
+    font-weight: 300;
+    font-family: 'Chromatica', 'Arial', sans-serif;
+    z-index: 5;
+    position: absolute;
+    width: 90%;
+    bottom: 260px;
+    text-align: center;
+    left: 5%;
+  }
+  .Admin_Team_Title {
+    font-family: 'Chromatica', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 30px;
+    -webkit-transform: scale(1, .85); /* Safari and Chrome */
+    -moz-transform: scale(1, .85); /* Firefox */
+    -ms-transform: scale(1, .85); /* IE 9+ */
+    -o-transform: scale(1, .85); /* Opera */
   }
 }
+
+

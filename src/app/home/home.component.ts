@@ -5,7 +5,7 @@ import { ScrollDispatcher } from '@angular/cdk/scrolling';
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: "app-home",
   templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.css", "./home.component.mobile.css"]
+  styleUrls: ["./home.component.mobile.css", "./home.component.css"]
 })
 export class HomeComponent implements OnInit, OnChanges, AfterViewInit {
 
