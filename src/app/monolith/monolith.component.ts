@@ -13,6 +13,7 @@ export class MonolithComponent implements OnInit, AfterViewInit {
   isPaused = true;
   @Input() BannerVideoScaleValue;
   @Input() BannerRotateValue;
+  @Input() isPortrait;
   Player1;
 
   options = {
