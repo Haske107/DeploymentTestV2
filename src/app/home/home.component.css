@@ -204,7 +204,7 @@
 /* TEAM SECTION STYLES */
 .Team_Row {
   padding-top: 1px;
-  height: 1300px;
+  height: 1225px;
 }
 
   .Team_Col {
@@ -226,7 +226,7 @@
         overflow: hidden;
       }
       .Admin_Team_Title_Row {
-        padding: 96px 20% 96px 20%;
+        padding: 96px 20% 24px 20%;
       }
       .Admin_Team_Title_Col {
         text-align: left;
@@ -358,7 +358,6 @@
             text-align: center;
             font-size: 18px;
             font-weight: 100;
-
         }
         .Contact_Title  {
             margin-bottom: 18px;
