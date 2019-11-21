@@ -103,7 +103,7 @@ export class HomeComponent implements OnInit, OnChanges, AfterViewInit {
   ];
 
   // ELEMENT HANDLES
-  @ViewChild('Contact_Row', {static: true}) Contact_Row;
+  @ViewChild('Contact_Row', {static: true}) contactRow;
 
     // CONTROL VARIABLES
   isMobile = false;
@@ -149,19 +149,19 @@ export class HomeComponent implements OnInit, OnChanges, AfterViewInit {
       }
 
       // INITIATE MOBILE SETTINGS
-      if (this.isMobile)  {
-      }
 
-      window.addEventListener('orientationchange', () => {
-        this.isPortrait = screen.orientation.type !== ('landscape-primary');
-        console.log(this.isPortrait);
-    }, false);
+
   }
 
   ngOnChanges()  {
   }
 
   ngAfterViewInit() {
+    window.addEventListener('orientationchange', () => {
+      this.isPortrait = screen.orientation.type !== ('landscape-primary');
+      this.cdr.detectChanges();
+
+    }, false);
   }
 
     BannerVideoScrolled(event: any)   {
@@ -169,8 +169,8 @@ export class HomeComponent implements OnInit, OnChanges, AfterViewInit {
   getContactSectionScrollPosition(DistanceFromTop: number)  {
       const height = window.innerHeight || document.documentElement.clientHeight ||
           document.body.clientHeight;
-      if (this.DistanceFromTop > this.Contact_Row.nativeElement.offsetTop - height / 2)  {
-      const ContactFormFromTop = this.Contact_Row.nativeElement.offsetTop;
+      if (this.DistanceFromTop > this.contactRow.nativeElement.offsetTop - height / 2)  {
+      const ContactFormFromTop = this.contactRow.nativeElement.offsetTop;
       this.ContactSectionTop = DistanceFromTop - ContactFormFromTop + height / 2;
     }
   }

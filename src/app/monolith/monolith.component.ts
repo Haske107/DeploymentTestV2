@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, Input, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, Input, OnInit, ViewChild} from '@angular/core';
 import Player from '@vimeo/player';
 
 @Component({
@@ -8,7 +8,7 @@ import Player from '@vimeo/player';
 })
 export class MonolithComponent implements OnInit, AfterViewInit {
 
-  constructor() { }
+  constructor(private cdr: ChangeDetectorRef) { }
   isMobile = false;
   isPaused = true;
   @Input() BannerVideoScaleValue;
@@ -37,9 +37,12 @@ export class MonolithComponent implements OnInit, AfterViewInit {
     this.Player1.getPaused().then((paused) => {
       if (paused) {
         this.isPaused = true;
+
       } else  {
         this.isPaused = false;
       }
+      this.cdr.detectChanges();
+
     }).catch((error) => {
       // an error occurred
     });
