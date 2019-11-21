@@ -1,7 +1,7 @@
 
 
-  <div class="Footer_Row row">
-    <div class="col Portfolio_Column">
+  <div class="Footer_Row row" [ngStyle]="isMobile ? {'height': '250px'} : {'height': '150px'} ">
+     <div class="col Portfolio_Column">
       <!--<h4>Project Portfolio</h4>-->
       <!--<h5 class="Category_Title"> Feature Films</h5>-->
       <!--<h5 class="Category_Title"> Short Films </h5>-->
@@ -10,17 +10,37 @@
     </div>
 
 
-     <div class="col Contact_Column">
+     <div class="col Contact_Column" *ngIf="!isMobile">
          <img src="https://drive.google.com/uc?export=view&id=162jN4jghrKGjJNfFNO_sm4tbqt3Ifwgq" alt="" class="footer-logo">
          <div class="social_icon_wrapper">
+           <a href="http://www.facebook.com/trikon.xyz/" target="_blank">
              <img src="../../assets/social_media_logos/facebook.svg" alt="" class="social-icon" >
-             <img src="../../assets/social_media_logos/twitter.svg" alt="" class="social-icon">
-             <img src="../../assets/social_media_logos/vimeo-social-logo.svg" alt="" class="social-icon">
-             <img src="../../assets/social_media_logos/instagram.svg" alt="" class="social-icon">
+           </a>
+           <a href="http://www.vimeo.com/trikon/" target="_blank">
+              <img src="../../assets/social_media_logos/vimeo-social-logo.svg" alt="" class="social-icon">
+           </a>
+           <a href="http://www.instagram.com/trikon.xyz/" target="_blank">
+              <img src="../../assets/social_media_logos/instagram.svg" alt="" class="social-icon">
+           </a>
          </div>
-
-         <p>© Copyright 2019 Trikon. All Rights Reserved. </p>
+         <p class="Copyright">© Copyright 2019 Trikon. All Rights Reserved. </p>
      </div>
+
+    <div class="col Contact_Column" *ngIf="isMobile">
+      <div class="social_icon_wrapper">
+        <a href="http://www.facebook.com/trikon.xyz/" target="_blank">
+          <img src="../../assets/social_media_logos/facebook.svg" alt="" class="social-icon-mobile" >
+        </a>
+        <a href="http://www.vimeo.com/trikon/" target="_blank">
+          <img src="../../assets/social_media_logos/vimeo-social-logo.svg" alt="" class="social-icon-mobile">
+        </a>
+        <a href="http://www.instagram.com/trikon.xyz/" target="_blank">
+          <img src="../../assets/social_media_logos/instagram.svg" alt="" class="social-icon-mobile">
+        </a>
+      </div>
+      <p  class="Copyright" [ngStyle]="isMobile ? {'font-size': '24px'} : {}"  >© Copyright 2019 Trikon. All Rights Reserved. </p>
+
+    </div>
 
     <div class="Link_Column col">
 

@@ -46,6 +46,10 @@ export class MonolithComponent implements OnInit, AfterViewInit {
     }).catch((error) => {
       // an error occurred
     });
+    this.Player1.on('pause', () => {
+      this.isPaused = true;
+      this.cdr.detectChanges();
+    });
 
   }
 
@@ -70,6 +74,26 @@ export class MonolithComponent implements OnInit, AfterViewInit {
     });
   }
 
+  pauseVideo() {
+    this.isPaused = true;
+
+    this.Player1.pause().then(() => {
+      // the video was played
+    }).catch((error) => {
+      switch (error.name) {
+        case 'PasswordError':
+          // the video is password-protected and the viewer needs to enter the
+          // password first
+          break;
+        case 'PrivacyError':
+          // the video is private
+          break;
+        default:
+          // some other error occurred
+          break;
+      }
+    });
+  }
 
 
 

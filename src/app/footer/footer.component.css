@@ -1,8 +1,14 @@
  .Footer_Row {
     background-color: rgb(61, 61, 61);
     z-index: 1;
-
+   overflow: hidden;
  }
+ .Footer_Row_Mobile {
+   background-color: rgb(61, 61, 61);
+   z-index: 1;
+   height: 200px;
+ }
+
     .Contact_Column, .Portfolio_Column, .Link_Column, .Contact_Col_Title {
       color: white;
       font-size: 12px;
@@ -17,6 +23,7 @@
       padding: 0;
       vertical-align: baseline;
       text-align: center;
+      height: 100%;
     }
         .Contact_Col_Title  {
           font-weight: 500;
@@ -31,22 +38,30 @@
           font-size: 18px;
         }
             .Contact_Column, .Link_Column, .Portfolio_Column {
-              padding: 48px;
             }
                 .footer-logo    {
-                    width: 80%;
-                    margin: 0 10% 12px 10%;
+                    width: 50%;
+                    margin: 12px 25% 12px 25%;
                 }
                 .social-icon   {
-                    height: 42px;
-                    width: 42px;
-                    padding: 6px;
+                    height: 36px;
+                    width: 36px;
                     cursor: pointer;
                     flex: auto;
                 }
+               .social-icon-mobile   {
+                 height: 96px;
+                 width: 96px;
+                 margin: 36px 100px;
+                 cursor: pointer;
+                 flex: auto;
+               }
                 .social_icon_wrapper    {
                     margin: 12px 20% 24px 20%;
                     width: 60%;
                     display: inline-flex;
                     justify-content: space-around;
+                }
+                .Copyright  {
+                  margin-bottom: 6px !important;
                 }
